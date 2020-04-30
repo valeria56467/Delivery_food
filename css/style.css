@@ -28,7 +28,9 @@
     background-position: left 11px center; /*позиционируем*/
     padding-left: 35px; /*-отступ слева, что бы текст не заезжал на картинку*/
 }
-.buttons {display: flex
+.buttons {
+    display: flex;
+    align-items: center;
 }
 
 .button {
@@ -51,6 +53,7 @@
     color: #FFFFFF;
     margin-right: 10px;
 }
+
 .button_ic {
     margin-right: 6px
 }
