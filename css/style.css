@@ -81,8 +81,24 @@ body {
     padding: 68px 70px;
 }
 .promo-text{
-    max-width: 500px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+    max-width: 538px;
 }
 
+.promo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    color: #302C34;
+
+}
+
+.promo-title {
+    line-height: 46px;
+}
 
 
