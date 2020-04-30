@@ -28,8 +28,12 @@
     background-position: left 11px center; /*позиционируем*/
     padding-left: 35px; /*-отступ слева, что бы текст не заезжал на картинку*/
 }
+.buttons {display: flex
+}
 
 .button {
+    display: flex;
+    align-items: center;
     padding-left: 16px;
     padding-right: 16px; /*эти 2 записи можно сократить на paddin: 8px 16 px*/
     background: #FFFFFF;
@@ -40,4 +44,21 @@
     color: #595959;
     font-size: 16px;
     line-height: 24px;
+}
+.button-primary {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.button_ic {
+    margin-right: 6px
+}
+
+.button-shop {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
 }
