@@ -65,6 +65,24 @@ body {
 .button_ic {
     margin-right: 6px
 }
+.promo {
+    width: 1200px;
+    height: 300px;
+    margin-top: 84px;
+    top: 125px;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.2);
+    background: #FFF1B8; /*в уроке прописывалось по иному : " background: #FFF1B8 url(../img/promo.png no-repeat top -100 px right -247 /924 px " у меня почему то не подхватывалось изображение*/
+    background-image: url("../img/promo.png");
+    /*background-size: 300px;*/
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat ;
+    border-radius: 10px;
+    padding: 68px 70px;
+}
+.promo-text{
+    max-width: 500px;
+}
 
 
 
