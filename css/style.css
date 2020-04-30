@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin-top: 44px;
 }
 
 .container{
@@ -13,6 +14,8 @@ body {
     display: flex; /*элетенты в 1 линию*/
     align-items: center; /*элементы по вертикали в 1 линию*/
     justify-content: space-between; //*раскидывание элементов по краям*/
+
+    margin-bottom: 40px;
 }
 
 .search-input {
