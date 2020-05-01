@@ -64,7 +64,7 @@ body {
 
 .button-primary {
     background: #1890FF;
-    border: 1px solid #1890FF;
+    border: 1px solid #1890ff;
     color: #FFFFFF;
     margin-right: 10px;
 }
@@ -116,12 +116,12 @@ body {
 
 }
 .section-title {
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
     color: #000000;
+    margin: 0;
 
 }
 
