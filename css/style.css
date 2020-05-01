@@ -14,24 +14,31 @@ body {
     display: flex; /*элетенты в 1 линию*/
     align-items: center; /*элементы по вертикали в 1 линию*/
     justify-content: space-between; //*раскидывание элементов по краям*/
-
     margin-bottom: 40px;
 }
-
-.search-input {
-
+.input{
     background: white; /*фоновый увет строки поиска - белый*/
     border: 1px solid #D9D9D9;
     border-radius: 2px;
-    height: 40px;
-    width: 690px;
     font-size: 16px; /*размер шрифта в поле*/
     line-height: 24px; /*высота строки*/
-    background-image: url("../img/home.svg"); /*устанавливаем "домик" как картинку раб. зоны*/
+    height: 40px;
+    padding: 8px;
+    padding-left: 35px; /*-отступ слева, что бы текст не заезжал на картинку*/
     background-repeat: no-repeat; /*устанавливаем единичное повторение*/
     background-position: left 11px center; /*позиционируем*/
-    padding-left: 35px; /*-отступ слева, что бы текст не заезжал на картинку*/
 }
+
+.input-address {
+    width: 680px;
+    background-image: url("../img/home.svg"); /*устанавливаем "домик" как картинку раб. зоны*/
+
+}
+
+.input-search{
+    background-image: url("../img/search.svg");
+    width: 300px;
+  }
 
 .buttons {
     display: flex;
@@ -44,7 +51,7 @@ body {
     width: auto; /*в уроке не было*/
     height: 40px;/*в уроке не было*/
     padding-left: 8px;
-    padding-right: 16px; /*эти 2 записи можно сократить на paddin: 8px 16 px*/
+    padding-right: 16px; /*эти 2 записи можно сократить на padding: 8px 16 px*/
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
@@ -79,14 +86,7 @@ body {
     background-repeat: no-repeat ;
     border-radius: 10px;
     padding: 68px 70px;
-}
-.promo-text{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #302C34;
-    max-width: 538px;
+    margin-bottom: 56px;
 }
 
 .promo-title {
@@ -101,4 +101,27 @@ body {
     line-height: 46px;
 }
 
+.promo-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+    max-width: 538px;
+}
+.section-heading {
+    display: flex; /*элетенты в 1 линию*/
+    align-items: center; /*элементы по вертикали в 1 линию*/
+    justify-content: space-between; //*раскидывание элементов по краям*/
+
+}
+.section-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+
+}
 
