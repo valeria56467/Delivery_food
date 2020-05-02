@@ -30,7 +30,8 @@ body {
 }
 
 .input-address {
-    width: 680px;
+    flex: 0.8; /*задаем размер строке 80% от свободного места*/
+    /*width: 680px; /*для оптимизации изменяем на Flex*/
     background-image: url("../img/home.svg"); /*устанавливаем "домик" как картинку раб. зоны*/
 
 }
@@ -76,8 +77,8 @@ body {
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 .promo {
-    width: 1200px;
-    height: 300px;
+    /*width: 1200px;*/
+    height: 300px; /*если прописывать в этом блоке то при адактации контенер не изменяет размера, или надо прописывать отдельно*/
     margin-top: 84px;
     top: 125px;
     box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.2);
@@ -242,4 +243,15 @@ body {
 }
  .social-link:not(:last-child) {
      margin-right: 21px /*для всех ссылок на соц. сети, но не для последней делаем отступ справа*/
+ }
+ 
+ @media (max-width: 1366px) {
+     .container {
+         max-width: 960px;
+     }
+     .promo {
+         width: 960px;
+
+     }
+     
  }
