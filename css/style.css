@@ -72,6 +72,7 @@ body {
 .button_ic {
     margin-right: 6px
 }
+
 .promo {
     width: 1200px;
     height: 300px;
@@ -94,7 +95,6 @@ body {
     font-weight: bold;
     font-size: 39px;
     color: #302C34;
-
 }
 
 .promo-title {
@@ -109,12 +109,14 @@ body {
     color: #302C34;
     max-width: 538px;
 }
+
 .section-heading {
     display: flex; /*элетенты в 1 линию*/
     align-items: center; /*элементы по вертикали в 1 линию*/
-    justify-content: space-between; //*раскидывание элементов по краям*/
-
+    justify-content: space-between; /*раскидывание элементов по краям*/
+    margin-bottom: 44px;
 }
+
 .section-title {
     font-style: normal;
     font-weight: bold;
@@ -122,6 +124,91 @@ body {
     line-height: 42px;
     color: #000000;
     margin: 0;
-
 }
 
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap; /*переност контента на след. строку, если он не помещает в 1*/
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    overflow:hidden;  /*обрезаем по размеру в карточки*/
+    margin-bottom: 30px;
+
+}
+.card-image {
+    width: 384px;
+    height: 250px;
+    object-fit: cover; /*автоматическая обрезка картинки*/
+
+}
+.card-text {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+ .card-tag {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 12px;
+     line-height: 20px;
+     display: flex;
+     align-items: center;
+     color: #FFFFFF;
+     background: #262626;
+     border-radius: 2px;
+     padding: 1px 8px;
+ }
+ .card-info {
+     display: flex;
+     align-items: center;
+ }
+
+.rating {
+    margin-right: 26px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFC107
+}
+.price{
+    margin-right: 10px;
+}
+.price,
+.category {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+.price:after {/*создание псевдоэлемента для отображения элемнта "точка" после "Цены"*/
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8c8c8c;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 10px;
+}
