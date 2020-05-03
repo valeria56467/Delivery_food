@@ -39,6 +39,7 @@ body {
 .input-search{
     background-image: url("../img/search.svg");
     width: 300px;
+    margin-left: auto;
   }
 
 .buttons {
@@ -74,6 +75,7 @@ body {
     margin-right: 6px
 }
 .main {
+    margin-top: 40px;
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 .promo {
@@ -116,7 +118,7 @@ body {
 .section-heading {
     display: flex; /*элетенты в 1 линию*/
     align-items: center; /*элементы по вертикали в 1 линию*/
-    justify-content: space-between; /*раскидывание элементов по краям*/
+    /*justify-content: space-between; /*раскидывание элементов по краям*/
     margin-bottom: 44px;
 }
 
@@ -127,6 +129,7 @@ body {
     line-height: 42px;
     color: #000000;
     margin: 0;
+    margin-right: 30px;
 }
 
 .cards {
@@ -168,6 +171,9 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
+}
+.card-title-res {
+    font-weight: 400;
 }
  .card-tag {
      font-style: normal;
@@ -238,13 +244,25 @@ body {
     margin-right: 15px; /*справа отступ 15 пикселей*/
 
 }
+.ingredients {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+
+
+
+    margin: 0px 10px;
+}
 .footer-nav { /*выравниваем ссылки по левой стороне ближе к логотипу*/
     margin-right: auto;
 }
  .social-link:not(:last-child) {
-     margin-right: 21px /*для всех ссылок на соц. сети, но не для последней делаем отступ справа*/
+     margin-right: 21px /*для всех ссылок на соц. сети, но не для последней, делаем отступ справа*/
  }
- 
+
+ /*
  @media (max-width: 1366px) {
      .container {
          max-width: 960px;
@@ -254,4 +272,4 @@ body {
 
      }
      
- }
+ }*/
