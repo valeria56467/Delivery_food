@@ -196,7 +196,7 @@ body {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
-     margin-bottom: 24px;
+     /*margin-bottom: 24px;*/
  }
 
 .rating {
@@ -258,7 +258,6 @@ body {
     line-height: 21px;
     color: #8C8C8C;
     word-break: break-all;
-    margin: 0px 10px;
 }
 
 .footer-nav { /*выравниваем ссылки по левой стороне ближе к логотипу*/
@@ -273,6 +272,7 @@ body {
 .card-buttons {
     display: flex;
     align-items: center;
+    margin-top: 24px;
 }
 .card-price-bold{
     font-weight: bold;
