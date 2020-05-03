@@ -74,6 +74,8 @@ body {
 .button_ic {
     margin-right: 6px
 }
+.button-card-text {margin-right: 10px}
+
 .main {
     margin-top: 40px;
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
@@ -140,13 +142,16 @@ body {
 }
 
 .card {
+    height: complex;
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
     overflow:hidden;  /*обрезаем по размеру в карточки*/
     margin-bottom: 30px;
-
+    flex-basis: 384px;
+    text-decoration: none;
 }
+
 .card-image {
     width: 384px;
     height: 250px;
@@ -190,6 +195,8 @@ body {
  .card-info {
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
+     margin-bottom: 24px;
  }
 
 .rating {
@@ -250,19 +257,32 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #8C8C8C;
-
-
-
+    word-break: break-all;
     margin: 0px 10px;
 }
+
 .footer-nav { /*выравниваем ссылки по левой стороне ближе к логотипу*/
     margin-right: auto;
+}
+.footer-logo {
+    margin-right: 20px;
 }
  .social-link:not(:last-child) {
      margin-right: 21px /*для всех ссылок на соц. сети, но не для последней, делаем отступ справа*/
  }
+.card-buttons {
+    display: flex;
+    align-items: center;
+}
+.card-price-bold{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 30px;
+}
 
- /*
+
+/*
  @media (max-width: 1366px) {
      .container {
          max-width: 960px;
