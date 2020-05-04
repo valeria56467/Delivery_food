@@ -288,13 +288,17 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
+    display: none; /*убираем модульное окно, что бы оно не было открыто всегда*/
+
+}
+.is-open { /*некоторый класс, который будет говорить нам, что окно надо открыть*/
     display: flex;
 
 }
 .modal-dialog {
     max-width: 780px;
     width: 95%;
-    min-height: 552px;
+    /*min-height: 552px;*/
     background: #FFFFFF;
     border-radius: 5px;
     margin: auto;
@@ -311,13 +315,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
 }
 .close {
     font-size: 39px;
     border: none;
     background-color: transparent; /* установили прозрачность фона знака "Close"*/
 
+}
+.modal-body {
+    margin-bottom: 52px;
 }
 .food-row {
     display: flex;
@@ -365,6 +372,23 @@ body {
     line-height: 24px;
     margin-left: 10px;
     margin-right: 10px;
+}
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-buttons {
+    display: flex;
+    align-items: center;
+}
+.price-tag {
+    background: #262626;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    font-size: 20px;
+    line-height: 23px;
 }
 /*
  @media (max-width: 1366px) {
