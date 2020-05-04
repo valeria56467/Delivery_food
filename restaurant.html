@@ -6,6 +6,7 @@
     <title>Тануки - доставка еда</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <img src="img/user.svg" class="button_ic" alt="user">
                <!-- <span class="button-text" Войти></span>  КОСЯК с шрифтами и текстом--> Войти
             </button>
-            <button class="button button-shop">
+            <button class="button" id="cart-button">
                 <img src="img/shopping-card.svg" class="button_ic" alt="shop">
                 <!--<span class="button-text"> Корзина</span> КОСЯК с шрифтами и текстом-->
                 Корзина
@@ -43,7 +44,7 @@
             </div>
             <!--начало описания блока с карточками-->
             <div class="cards">
-                <div class="card">
+                <div class="card wow fadeInUp" data-wow-delay="0.2s">
                     <!-- начало описания 1 карточки-->
                     <img src="tanuki-img/tanuki1.png" alt="tanuki1" class="card-image"/> <!-- картинка-->
                     <div class="card-text"> <!--написание инфо-блока -->
@@ -63,7 +64,7 @@
                         </div>
                      </div>
                 </div>
-                <div class="card">
+                <div class="card wow fadeInUp" data-wow-delay="0.4s">
                     <!-- начало описания 2 карточки-->
                     <img src="tanuki-img/tanuki2.png" alt="tanuki2" class="card-image"/> <!-- картинка-->
                     <div class="card-text"> <!--написание инфо-блока -->
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow fadeInUp" data-wow-delay="0.6s">
                     <!-- начало описания 3 карточки-->
                     <img src="tanuki-img/tanuki3.png" alt="tanuki3" class="card-image"/> <!-- картинка-->
                     <div class="card-text"> <!--написание инфо-блока -->
@@ -104,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow fadeInUp" data-wow-delay="0.8s">
                     <!-- начало описания 4 карточки-->
                     <img src="tanuki-img/tanuki4.png" alt="tanuki4" class="card-image"/> <!-- картинка-->
                     <div class="card-text"> <!--написание инфо-блока -->
@@ -124,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow fadeInUp" data-wow-delay="1s">
                     <!-- начало описания 5 карточки-->
                     <img src="tanuki-img/tanuki5.png" alt="tanuki5" class="card-image"/> <!-- картинка-->
                     <div class="card-text"> <!--написание инфо-блока -->
@@ -146,7 +147,7 @@
 
                     </div>
                 </div>
-                <div class="card">
+                <div class="card wow fadeInUp" data-wow-delay="1.2s">
                     <!-- начало описания 6 карточки-->
                     <img src="tanuki-img/tanuki6.png" alt="tanuki6" class="card-image"/> <!-- картинка-->
                     <div class="card-text"> <!--написание инфо-блока -->
@@ -256,11 +257,9 @@
         </div>
          <!--<div class="modal-footer"></div>-->
     </div>
+    <script src="js/wow.min.js"></script>
     <!--Подключаем скрипт для модального окна-->
-    <script src="js/main.js">
-
-    </script>
-
+    <script src="js/main.js"></script>
 </div>
 </body>
 </html>
